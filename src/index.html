@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ordering Food</title>
+        <link rel="stylesheet" href="food_order.css">
+    </head>
+    <body>
+        <div class="title">
+            <h2>Order</h2>
+        </div>
+        <form name="order" action="process_order.php" method="post">
+            <div class="cust_info">
+                <div class="cust_name">
+                    <label for="cname">Customer Name:</label>
+                    <input type="text" id="cname" name="cname" placeholder="Short Name is fine" size="50">
+                </div>
+                <div class="cust_table">
+                    <label for="ctable">Table No:</label>
+                    <input type="text" id="ctable" name="ctable" placeholder="T1" size="50">
+                </div>
+            </div>
+            <div class="food_menu">
+                <h2>Food List</h2>
+                <fieldset>
+                    <legend>Food</legend>
+                    <p class="main_food">
+                        <input type="number" name="funit[]" id="chick_teri" min="0" value="0" step="1">
+                        <label for="chick_teri">Chicken Teriyaki Rice</label>
+                        <input type="number" name="funit[]" id="wagyu_teri" min="0" value="0" step="1">
+                        <label for="wagyu_teri">Wagyu Teriyaki Rice</label>
+                        <input type="number" name="funit[]" id="unagi_teri" min="0" value="0" step="1">
+                        <label for="unagi_teri">Unagi Teriyaki Rice</label>
+                        <input type="number" name="funit[]" id="chick_don" min="0" value="0" step="1">
+                        <label for="chick_don">Chicken Don</label>
+                        <input type="number" name="funit[]" id="yaki_don" min="0" value="0" step="1">
+                        <label for="yaki_don">Yakiniku Don</label>
+                        <input type="number" name="funit[]" id="unagi_don" min="0" value="0" step="1">
+                        <label for="unagi_don">Unagi Don</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Drinks</legend>
+                    <p class="main_drink">
+                        <input type="number" name="dunit[]" id="sky_juice" min="0" value="0" step="1">
+                        <label for="sky_juice">Sky Juice</label>
+                        <input type="number" name="dunit[]" id="apple_juice" min="0" value="0" step="1">
+                        <label for="apple_juice">Apple Juice</label>
+                        <input type="number" name="dunit[]" id="carrot_juice" min="0" value="0" step="1">
+                        <label for="carrot_juice">Carrot Milk Juice</label>
+                        <input type="number" name="dunit[]" id="melon_juice" min="0" value="0" step="1">
+                        <label for="melon_juice">Watermelon Juice</label>
+                        <input type="number" name="dunit[]" id="lime_juice" min="0" value="0" step="1">
+                        <label for="lime_juice">Lime Juice</label>
+                    </p>
+                </fieldset>
+            </div>
+            <div id="submit_btn">
+                <input type="submit" id="submit" value="Confirm Order">
+            </div>
+        </form>
+    </body>
+</html>

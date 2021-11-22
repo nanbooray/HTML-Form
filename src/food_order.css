@@ -1,0 +1,58 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cust_info{
+    margin: 10px;
+}
+.cust_info .cust_name{
+    padding-bottom: 15px;
+}
+.cust_info .cust_name input{
+    left: 30%;
+} 
+.cust_info .cust_table{
+    padding-bottom: 20px;
+}
+.cust_info .cust_table #ctable{
+    left: 1050px;
+}
+
+.food_menu{
+    justify-content: space-evenly;
+}
+.food_menu label{
+    padding-right: 30px;
+    font-size: 18px;
+}
+input{
+    width: 40px;
+    height: 20px;
+}
+#submit_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+#submit{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: azure;
+    background-color: rgb(22, 160, 252);
+    border-radius: 20px;
+}
+#submit:hover{
+    color: rgb(243, 44, 44);
+    transition: all 0.5s ease-out;
+}
+
+fieldset{
+    border: none;
+}
+legend{
+    font-weight: bold;
+    font-size: 24px;
+}
